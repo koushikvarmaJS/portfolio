@@ -3,6 +3,7 @@ import { ExternalLink, Folder } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import portfolioData from "@/data/portfolioData.json";
 import { IoLogoGithub } from "react-icons/io5";
+import { getPublicPath } from "@/lib/utils";
 
 const Projects = () => {
   const { projects } = portfolioData;
@@ -42,7 +43,7 @@ const Projects = () => {
                 {/* Project Image/Header */}
                 <div className="h-48 bg-gradient-to-br from-secondary to-card relative overflow-hidden">
                   {project.image ? (
-                    <img src={project.image} alt={project.name} className="w-full h-full object-cover" />
+                    <img src={getPublicPath(project.image)} alt={project.name} className="w-full h-full object-cover" />
                   ) :
                   (<div className="absolute inset-0 flex items-center justify-center">
                     <Folder className="w-16 h-16 text-primary/30" />
