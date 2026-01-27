@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowDown, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import portfolioData from "@/data/portfolioData.json";
+import { getPublicPath } from "@/lib/utils";
 
 const Hero = () => {
   const { profile, contact } = portfolioData;
@@ -92,7 +93,7 @@ const Hero = () => {
                 className="border-primary text-primary hover:bg-primary/10"
                 asChild
               >
-                <a href={profile.resumeUrl} download>
+                <a href={getPublicPath(profile.resumeUrl)} download>
                   <Download className="mr-2 w-4 h-4" />
                   Resume
                 </a>
@@ -117,7 +118,7 @@ const Hero = () => {
                 <div className="w-full h-full rounded-full bg-card flex items-center justify-center overflow-hidden">
                   {profile.image ? (
                   <img
-                  src={profile.image}
+                  src={getPublicPath(profile.image)}
                   alt={profile.name}
                   className="w-full h-full object-cover"
                   />) : (
