@@ -1,0 +1,159 @@
+{
+  "profile": {
+    "name": "Koushik Bhupathiraju",
+    "title": "Software Developer & AI Engineer",
+    "summary": "Passionate about building scalable web applications and intelligent systems. I specialize in creating seamless user experiences backed by robust architectures. Currently exploring the intersection of AI and web technologies to solve real-world problems.",
+    "image": "/gibli.png",
+    "resumeUrl": "/koushik_resume.pdf"
+  },
+  "contact": {
+    "email": "kbhupathiraju@quinnipiac.edu.com",
+    "phone": "+1 (860) 328-9062",
+    "github": "https://github.com/koushikvarmaJS",
+    "linkedin": "https://www.linkedin.com/in/koushik-bhupathiraju-b26649188/",
+    "location": "New Haven, CT"
+  },
+  "experience": [
+    {
+      "id": 1,
+      "title": "Software Engineer",
+      "company": "Accenture",
+      "logo" : "",
+      "period": "Oct 2022 – Dec 2024",
+      "description" : "Monitored and resolved transmission issues from SPQ to Informatica PowerCenter and Oracle SQL Developer, ensuring seamless data flow to ERPs like SAP, Novora, and Ariba. Queried and debugged job failures in Oracle SQL Developer, improving transmission reliability across daily and weekly batch jobs. Optimized and rewrote repetitive SQL queries, improving maintainability and performance. Handled duplicate and missing data issues by analyzing workflows and ERPs, improving data accuracy and consistency by 30%. Used tools like SOAP UI and Postman for backend data testing and validation. Performed bulk upload, merge, alter, and delete operations in Oracle based on business requirements. Built ingestion pipelines with Kafka and HDFS, storing data in Cassandra, MongoDB, and Hadoop. Performed analysis using Spark, Hive, Cassandra CQL, and PySpark in training phase with a real time case study.",
+      "technologies": ["SQL Developer", "Informatica PowerCenter", "SQL", "Python"]
+    },
+    {
+      "id": 2,
+      "title": "Software Development Intern",
+      "company": "Rammina Dev & Design",
+      "logo": "",
+      "period": "Jun 2025 – Aug 2025",
+      "description" : "Built a fundraiser web app using React.js, Node.js/Express, and MongoDB. Integrated Stripe for secure payment processing and used Google OAuth for seamless user authentication. Utilized JWT tokenization for secure user sessions and built RESTful APIs, tested with Postman. Leveraged Cloudinary for efficient media storage and management, ensuring optimized image handling.",
+      "technologies": ["React", "Node.js", "Express", "GoogleAuth", "MongoDB", "Stripe"]
+    },
+    {
+      "id": 3,
+      "title": "Graduate Assistant",
+      "company": "Quinnipiac University",
+      "logo": "",
+      "period": "May 2025 – Present",
+      "description" : "Advised international applicants on admissions, visa processes, and program selection across multiple regions. Automated updates to the visa issuance Excel sheet using Pandas and generated insights through charts. Reviewed academic transcripts and grading scales to assist accurate and timely international application decisions.",
+      "technologies": ["Python", "Excel"]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "Money-Management Mobile App",
+      "domain": "Web Development",
+      "image": "/moneymanagement.png",
+      "description": " Developed a cross-platform money management app using Expo for rapid prototyping and deployment. Built a native-like front end with ReactNative, ensuring a seamless user experience across platforms. Implemented efficient server-side logic with Node.js, handling asynchronous requests effectively. Deployed and managed backend services on AWS DynamoDB, ensuring security and scalability.",
+      "technologies": ["JavaScript", "ReactNative", "Node.js", "Express", "DynamoDB"],
+      "github": "https://github.com/koushikvarmaJS/expenses",
+      "demo": ""
+    },
+    {
+      "id": 2,
+      "name": "Trivia Game",
+      "domain": "Computer Networks",
+      "image": "/networking.png",
+      "description" : "A multiplayer trivia game built in Python using a client-server architecture. Players connect as clients and buzz in to answer questions, with UDP handling fast buzzer signals and TCP managing reliable question/answer communication. The server tracks scores and determines which player buzzed first. Questions are stored in JSON, making it easy to add or modify content. This project demonstrates networking concepts, concurrency, and real-time game mechanics.",
+      "technologies": ["Python", "Threading" , "UDP", "TCP"],
+      "github": "https://github.com/koushikvarmaJS/networks",
+      "demo": ""
+    },
+    {
+      "id": 3,
+      "name": "ASL Recognition",
+      "domain": "Machine Learning",
+      "image": "/asl.png",
+      "description" : "Built a real-time ASL recognizer using MediaPipe and OpenCV for hand tracking and landmark detection. Trained a ResNet50 ASL model with grayscale inputs and green screen preprocessing for static sign detection. Developed an ASL classifier using VGG16 with grayscale images and softmax-based multi-class prediction.",
+      "technologies": ["Python", "MediaPipe", "machine learning models"],
+      "github": "",
+      "demo": ""
+    },
+    {
+      "id": 4,
+      "name": "Journal",
+      "domain": "Web Development and AI",
+      "image": "/goals.jpg",
+      "description" : "A full-stack web application that generates goal-oriented learning plans by breaking user intents (e.g., learning DSA) into actionable steps using the OpenAI API. The frontend is built with React and Vite, while the backend uses TypeScript with CommonJS and MongoDB for persistent journal storage. Users can generate goals, follow structured steps, and save personal journals. The project demonstrates AI integration, RESTful design, and modern full-stack development practices.",
+      "technologies": ["React", "Node.js", "Express", "openAI", "MongoDB"],
+      "github": "https://github.com/koushikvarmaJS/hackathonQU25",
+      "demo": ""
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "institution": "Quinnipiac University",
+      "logo": "",
+      "degree": "Master of Science",
+      "field": "Computer Science with AI Specialization",
+      "period": "2025 – 2026",
+      "description": "Focused on Course work like Intelligent Systems, AI and also traditional courses like Operating Systems, Computer Networks, Embedded Systems and Algorithms and Design."
+    },
+    {
+      "id": 2,
+      "institution": "National Institute of Technology",
+      "logo": "",
+      "degree": "Bachelor of Technology",
+      "field": "Electronics and Communication Engineering",
+      "period": "2018 – 2022",
+      "description" : "Concentrated in Machine Learning, Deep Learning and Neural Networks. Learned core concepts like VLSI, Microprocessors, Analog and Digital Electronics and Digital Signal Processing."
+    }
+  ],
+  "skills": {
+    "languages": ["JavaScript", "C++", "C", "Python", "Java", "SQL"],
+    "technologies": [
+      "Hadoop",
+      "Hive",
+      "Spark",
+      "Cassandra",
+      "NoSQL",
+      "Objective-Oriented Programming",
+      "Informatica PowerCenter"
+    ],
+    "frameworks": [
+      "React",
+      "Next.js",
+      "Vue.js",
+      "Tailwind CSS",
+      "HTML/CSS",
+      "Node.js",
+      "Express",
+      "PySpark",
+      "Pandas",
+      "Threading",
+      "Mediapipe"
+    ],
+    "tools": [
+      "Git",
+      "AWS",
+      "MongoDB",
+      "AWS DynamoBD",
+      "Postman",
+      "Oracle SQL Developer",
+      "Jupyter",
+      "VS Code"
+    ],
+    "ai_ml": ["Learning Phase"]
+  },
+  "certifications": [
+    {
+      "id": 1,
+      "name": "AWS Developer Associate",
+      "issuer": "Amazon Web Services",
+      "date": "2023",
+      "url": "https://aws.amazon.com/certification"
+    },
+    {
+      "id": 2,
+      "name": "Full Stack Course",
+      "issuer": "University of Helsinki",
+      "date": "2025",
+      "url": "https://fullstackopen.com/en/about"
+    }
+  ]
+}

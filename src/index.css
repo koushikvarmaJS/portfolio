@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+  Portfolio Design System
+  Theme: Dark slate with cyan accent
+  Style: Modern, minimal, professional
+*/
+
+@layer base {
+  :root {
+    /* Base colors - Dark theme */
+    --background: 222 47% 6%;
+    --foreground: 210 40% 98%;
+
+    /* Card surfaces with subtle elevation */
+    --card: 222 47% 9%;
+    --card-foreground: 210 40% 98%;
+
+    /* Popover/dropdown surfaces */
+    --popover: 222 47% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Primary accent - Cyan/Teal */
+    --primary: 174 72% 56%;
+    --primary-foreground: 222 47% 6%;
+
+    /* Secondary - Muted slate */
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    /* Muted elements */
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 55%;
+
+    /* Accent - Same as primary for consistency */
+    --accent: 174 72% 56%;
+    --accent-foreground: 222 47% 6%;
+
+    /* Destructive states */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Borders and inputs */
+    --border: 217 33% 20%;
+    --input: 217 33% 20%;
+    --ring: 174 72% 56%;
+
+    --radius: 0.75rem;
+
+    /* Custom gradient variables */
+    --gradient-primary: linear-gradient(135deg, hsl(174 72% 56%) 0%, hsl(186 76% 50%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(222 47% 10%) 0%, hsl(222 47% 7%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(222 47% 8%) 0%, hsl(222 47% 5%) 100%);
+    
+    /* Glass effect */
+    --glass-bg: hsl(222 47% 10% / 0.7);
+    --glass-border: hsl(217 33% 25% / 0.5);
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px hsl(222 47% 3% / 0.3);
+    --shadow-md: 0 4px 16px hsl(222 47% 3% / 0.4);
+    --shadow-lg: 0 8px 32px hsl(222 47% 3% / 0.5);
+    --shadow-glow: 0 0 40px hsl(174 72% 56% / 0.15);
+
+    /* Sidebar */
+    --sidebar-background: 222 47% 8%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 174 72% 56%;
+    --sidebar-primary-foreground: 222 47% 6%;
+    --sidebar-accent: 217 33% 17%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 33% 20%;
+    --sidebar-ring: 174 72% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground));
+  }
+}
+
+@layer components {
+  /* Glass card effect */
+  .glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Section styling */
+  .section-container {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Hover card effect */
+  .hover-card {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .hover-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg), var(--shadow-glow);
+  }
+
+  /* Tech badge */
+  .tech-badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium;
+    @apply bg-secondary text-primary border border-primary/20;
+  }
+
+  /* Link underline animation */
+  .link-underline {
+    @apply relative;
+  }
+
+  .link-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-px bg-primary transition-all duration-300;
+  }
+
+  .link-underline:hover::after {
+    @apply w-full;
+  }
+
+  /* Glow effect */
+  .glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  /* Section title */
+  .section-title {
+    @apply text-sm font-semibold tracking-widest uppercase text-primary mb-4;
+  }
+
+  .section-heading {
+    @apply text-3xl sm:text-4xl font-bold text-foreground mb-8;
+  }
+}
+
+@layer utilities {
+  /* Animation delays */
+  .animation-delay-100 { animation-delay: 100ms; }
+  .animation-delay-200 { animation-delay: 200ms; }
+  .animation-delay-300 { animation-delay: 300ms; }
+  .animation-delay-400 { animation-delay: 400ms; }
+  .animation-delay-500 { animation-delay: 500ms; }
+}
