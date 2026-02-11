@@ -1,0 +1,206 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage[margin=1.4cm]{geometry}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.15in}
+ \addtolength{\textwidth}{0.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{0pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      {\small#1} & {\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}\vspace{0pt}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Large \scshape \textbf{Koushik Bhupathiraju}} \\[2mm]
+    \footnotesize \raisebox{-0.1\height}
+    \faPhone\ \underline{(860) 328-9062} ~ 
+    {\faEnvelope\  \underline{kbhupathiraju@quinnipiac.edu}} ~ 
+    {\faLinkedin\ \underline{\href{https://www.linkedin.com/in/koushik-bhupathiraju-b26649188/}{linkedin.com/in/koushik/}}}  ~
+     {\faGithub\ \underline{\href{https://github.com/koushikvarmaJS}{https://github.com/koushik/}}} ~
+    {\faBriefcase\ \underline{\href{https://koushikvarmajs.github.io/portfolio/}{Web Portfolio}}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Masters of Science in Computer Science, \textmd{\textit{Quinnipiac University}}}{Jan 2025 -- Dec 2026}
+    % {University of Houston}{Aug. 2024 -- May 2026}
+    {Algorithms and Design, Operating Systems, Database Systems, Embedded Systems $|$ \textbf{GPA: }3.77/4.0}{Hamden, CT}
+
+  \resumeSubheading
+    {B.Tech in Electronics and Communication, \textmd{\textit{National Institute of Technology}}}{Jul 2018 -- May 2022}
+    % {Vellore Institute of Technology}{Aug. 2018 -- May 2022} 
+    {Data Structures, Computer Programming, Neural Networks and Deep Learning}{Karnataka, India}
+\resumeSubHeadingListEnd
+    
+    \vspace{-14pt}
+  %-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{   
+     \textbf{Languages}{: Python, SQL, HTML5, CSS, JavaScript, C, C++, Java} \\[1mm]
+      \textbf{Technologies}{: Hadoop, Hive, Spark, Cassandra, NoSQL, Object-oriented programming, Informatica PowerCenter } \\[1mm]
+     \textbf{Developer Tools}{: AWS DynamoDB, Postman, GIT, MongoDB, Oracle SQL Developer, Jupyter, VS Code} \\[1mm]
+     \textbf{Libraries/Frameworks}{:  ReactNative, ReactJS, MySQL, NodeJS, PySpark, Pandas, MediaPipe, Threading} \\ [1mm]
+     \textbf{Certificates}{:  Full Stack Open, AWS Developer Associate (Accenture)} \\ [1mm]
+    }}
+ \end{itemize}
+ \vspace{-14pt}
+%-----------Experience---------------
+\section{Work Experience}
+    \resumeSubHeadingListStart
+                \resumeSubheading{Software Engineer}{Oct 2022 -- Dec 2024}{Accenture Solutions, Inc}{Hyderabad, India } 
+                \resumeItemListStart
+                   \resumeItem{Monitored and resolved transmission issues from SPQ to \textbf{Informatica PowerCenter} and \textbf{Oracle SQL Developer}, ensuring seamless data flow to ERPs like \textbf{SAP}, \textbf{Novora}, and \textbf{Ariba}.}  
+                    \resumeItem{Queried and debugged job failures in \textbf{Oracle SQL Developer}, improving transmission reliability across daily and weekly batch jobs. Optimized and rewrote repetitive \textbf{SQL} queries, improving maintainability and performance.}  
+
+                    \resumeItem{Handled duplicate and missing data issues by analyzing workflows and ERPs, improving data accuracy and consistency by 30\%. Used tools like \textbf{SOAP UI} and \textbf{Postman} for backend data testing and validation.}  
+                                            % \vspace{-12pt}
+
+                    \resumeItem{Performed bulk upload, merge, alter, and delete operations in Oracle based on business requirements.} 
+                    \resumeItem{Built ingestion pipelines with \textbf{Kafka} and \textbf{HDFS}, storing data in \textbf{Cassandra}, \textbf{MongoDB}, and \textbf{Hadoop}.}
+
+                    \resumeItem{Performed analysis using \textbf{Spark, Hive, Cassandra CQL,} and \textbf{PySpark} in training phase with a real time case study.}    
+                    \resumeItemListEnd
+            \resumeSubheading{Software Development Intern}{May 2025 -- Aug 2025}{Rammina Dev \& Design}{Remote, Philippines}
+                \resumeItemListStart
+                   \resumeItem{Built a fundraiser web app using \textbf{React.js}, \textbf{Node.js/Express}, and \textbf{MongoDB}.}  
+                    \resumeItem{Integrated \textbf{Stripe} for secure payment processing and used \textbf{Google OAuth} for seamless user authentication.}  
+                    \resumeItem{Utilized \textbf{JWT} tokenization for secure user sessions and built RESTful APIs, tested with \textbf{Postman}.}  
+                    \resumeItem{Leveraged \textbf{Cloudinary} for efficient media storage and management, ensuring optimized image handling.}  
+
+                    \resumeItemListEnd
+                    
+            \resumeSubheading{Graduate Assistant}{May 2025 -- Present}{Quinnipiac University}{Hamden, Connecticut}
+                \resumeItemListStart
+                   \resumeItem{Advised international applicants on admissions, visa processes, and program selection across multiple regions.}  
+                    \resumeItem{Automated updates to the visa issuance Excel sheet using \textbf{Pandas} and generated insights through charts.}  
+                    \resumeItem{Reviewed academic transcripts and grading scales to assist accurate and timely international application decisions.}   
+
+                    \resumeItemListEnd
+            
+    \resumeSubHeadingListEnd
+    \vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects} 
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+   
+ \resumeProjectHeading
+            {\textbf{ASL Recognition} $|$ \emph{Python, MediaPipe, ML}}{}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{Built a real-time ASL recognizer using \textbf{MediaPipe} and \textbf{OpenCV} for hand tracking and landmark detection.}
+            \resumeItem{Trained a \textbf{ResNet50} ASL model with grayscale inputs and green screen preprocessing for static sign detection.}
+            \resumeItem{Developed an ASL classifier using \textbf{VGG16} with grayscale images and softmax-based multi-class prediction.}
+          \resumeItemListEnd
+ \vspace{-16pt}
+ \resumeProjectHeading
+            {\textbf{Money-Management App} $|$ \emph{ReactNative, Nodejs, ExpressJs}}{}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{Developed a cross-platform money management app using \textbf{Expo} for rapid prototyping and deployment.}
+            \resumeItem{Built a native-like front end with \textbf{ReactNative}, ensuring a seamless user experience across platforms.}
+            \resumeItem{Implemented efficient server-side logic with \textbf{Node.js}, handling asynchronous requests effectively.}
+            \resumeItem{Deployed and managed backend services on \textbf{AWS DynamoDB}, ensuring security and scalability.}
+          \resumeItemListEnd
+ \vspace{-16pt}
+
+\resumeSubHeadingListEnd
+\vspace{-15pt}
+
+ \vspace{3pt}
+\vspace{10pt}
+
+\vspace{-15pt}
+
+
+
+\end{document}
