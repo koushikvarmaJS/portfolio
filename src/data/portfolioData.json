@@ -45,6 +45,16 @@
   "projects": [
     {
       "id": 1,
+      "name": "KV Cache Compression",
+      "domain": "Thesis (AI)",
+      "image": "/kv.png",
+      "description" : "Completed a thesis on energy benchmarking of KV cache compression for LLM inference on GPUs. Built a GPU power measurement pipeline using NVML to compute joules/token and tokens/joule. Benchmarked eviction, quantization, and hybrid KV cache methods against no-compression baselines. Evaluated energy–performance trade-offs across context lengths, batch sizes, and models. Analyzed the impact of compression ratio vs. compute overhead on energy efficiency. Produced reproducible benchmarks and practical guidelines for energy-efficient LLM deployment." ,
+      "technologies": ["Python", "AI", "GPU", "Transformers", "Inference", "LLMs"],
+      "github": "https://github.com/koushikvarmaJS/thesis",
+      "demo": ""
+    },
+    {
+      "id": 2,
       "name": "Money-Management Mobile App",
       "domain": "Web Development",
       "image": "/moneymanagement.png",
@@ -54,7 +64,7 @@
       "demo": ""
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Trivia Game",
       "domain": "Computer Networks",
       "image": "/networking.png",
@@ -64,7 +74,7 @@
       "demo": ""
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "ASL Recognition",
       "domain": "Machine Learning",
       "image": "/asl.png",
@@ -74,7 +84,7 @@
       "demo": ""
     },
     {
-      "id": 4,
+      "id": 5,
       "name": "Journal",
       "domain": "Web Development and AI",
       "image": "/goals.jpg",
@@ -143,10 +153,10 @@
   "certifications": [
     {
       "id": 1,
-      "name": "AWS Developer Associate",
+      "name": "AWS Certified Cloud Practitioner",
       "issuer": "Amazon Web Services",
-      "date": "2023",
-      "url": "https://aws.amazon.com/certification"
+      "date": "2026",
+      "url": "https://drive.google.com/file/d/1nXNBSuXtzgMuHR9PYkVAJ8LYYSwDRubA/view?usp=sharing"
     },
     {
       "id": 2,
