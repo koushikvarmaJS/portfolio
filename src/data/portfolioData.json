@@ -156,14 +156,16 @@
       "name": "AWS Certified Cloud Practitioner",
       "issuer": "Amazon Web Services",
       "date": "2026",
-      "url": "https://drive.google.com/file/d/1nXNBSuXtzgMuHR9PYkVAJ8LYYSwDRubA/view?usp=sharing"
+      "url": "https://drive.google.com/file/d/1nXNBSuXtzgMuHR9PYkVAJ8LYYSwDRubA/view?usp=sharing",
+      "image" : "/aws-certified-cloud-practitioner.png"
     },
     {
       "id": 2,
       "name": "Full Stack Course",
       "issuer": "University of Helsinki",
       "date": "2025",
-      "url": "https://fullstackopen.com/en/about"
+      "url": "https://fullstackopen.com/en/about",
+      "image": ""
     }
   ]
 }

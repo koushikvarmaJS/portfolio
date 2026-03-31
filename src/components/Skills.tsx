@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { DatabaseZap, Layers, Brain, Wrench, SquareCode } from "lucide-react";
+import { DatabaseZap, Layers, Brain, Wrench, SquareCode, BookOpen } from "lucide-react";
 import portfolioData from "@/data/portfolioData.json";
+import { getPublicPath } from "@/lib/utils";
 
 const Skills = () => {
   const { skills, certifications } = portfolioData;
@@ -99,8 +100,16 @@ const Skills = () => {
               whileHover={{ scale: 1.02, x: 8 }}
               className="glass-card rounded-xl p-4 flex items-center gap-4 hover-card group"
             >
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
-                <span className="text-2xl">📖</span>
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors overflow-hidden">
+                {cert.image ? (
+                  <img
+                    src={getPublicPath(cert.image)}
+                    alt={cert.name}
+                    className="w-8 h-8 object-contain"
+                  />
+                ) : (
+                  <BookOpen className="w-6 h-6 text-primary" />
+                )}
               </div>
               <div className="flex-1">
                 <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors">
