@@ -38,7 +38,7 @@
       "company": "Quinnipiac University",
       "logo": "",
       "period": "May 2025 – Present",
-      "description" : "Advised international applicants on admissions, visa processes, and program selection across multiple regions. Automated updates to the visa issuance Excel sheet using Pandas and generated insights through charts. Reviewed academic transcripts and grading scales to assist accurate and timely international application decisions.",
+      "description" : "Generated branded multi-page PDF reports client-side with jsPDF/autotable, including dynamic image embedding, per-school course and scale breakdowns, and deployed as a static export under a configurable basePath. Advised international applicants on admissions, visa processes, and program selection across multiple regions. Automated updates to the visa issuance Excel sheet using Pandas and generated insights through charts. Reviewed academic transcripts and grading scales to assist accurate and timely international application decisions.",
       "technologies": ["Python", "Excel"]
     }
   ],
@@ -91,6 +91,16 @@
       "description" : "A full-stack web application that generates goal-oriented learning plans by breaking user intents (e.g., learning DSA) into actionable steps using the OpenAI API. The frontend is built with React and Vite, while the backend uses TypeScript with CommonJS and MongoDB for persistent journal storage. Users can generate goals, follow structured steps, and save personal journals. The project demonstrates AI integration, RESTful design, and modern full-stack development practices.",
       "technologies": ["React", "Node.js", "Express", "openAI", "MongoDB"],
       "github": "https://github.com/koushikvarmaJS/hackathonQU25",
+      "demo": ""
+    },
+    {
+      "id": 6,
+      "name": "GPA Calculator",
+      "domain": "Web Development and AI",
+      "image": "/gpa.jpg",
+      "description" : "Created a GPA Static GPA Calculator website to convert international transcripts to USA grade. The website allows you to enter the courses and scale you want to use to convert the scale. Then you can download the report which uses jsPDF. Designed and created to tackle the expensive websites available online.",
+      "technologies": ["React","TypeScript", "Claude Code"],
+      "github": "https://github.com/koushikvarmaJS/gpacalculator",
       "demo": ""
     }
   ],
