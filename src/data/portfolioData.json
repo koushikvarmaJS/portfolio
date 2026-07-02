@@ -2,7 +2,7 @@
   "profile": {
     "name": "Koushik Bhupathiraju",
     "title": "Software Developer & AI Engineer",
-    "summary": "Passionate about building scalable web applications and intelligent systems. I specialize in creating seamless user experiences backed by robust architectures. Currently exploring the intersection of AI and web technologies to solve real-world problems.",
+    "summary": "Passionate about building scalable web applications and intelligent systems.I specialize in creating seamless user experiences backed by robust architectures. Currently exploring the intersection of AI and web technologies to solve real-world problems.",
     "image": "/gibli.png",
     "resumeUrl": "/koushik_resume.pdf"
   },
@@ -34,12 +34,21 @@
     },
     {
       "id": 3,
+      "title": "ERP Project Coordinator (internship)",
+      "company": "Baron Engraving",
+      "logo": "",
+      "period": "Jun 2026 – Aug 2026",
+      "description" : "Automated inventory and purchasing data migration workflows using Python (pandas), transforming legacy Excel/CSV files into Acumatica-ready import templates by mapping fields such as inventory ID, warehouse, location, UOM, unit cost, serial/lot numbers, and descriptions. Built data-cleaning and validation logic to handle duplicate inventory records, missing values, and inconsistent formatting, including rules to retain the highest unit cost across repeated inventory IDs and generate standardized output files for ERP upload. Improved day-to-day operational reporting and spreadsheet processes using Excel, VBA, and Python, reducing manual data entry, speeding up file preparation, and supporting inventory / open PO data accuracy during system migration and implementation tasks.",
+      "technologies": ["Acumatica", "Python", "HubSpot", "Excel"]
+    },
+    {
+      "id": 4,
       "title": "Graduate Assistant",
       "company": "Quinnipiac University",
       "logo": "",
       "period": "May 2025 – Present",
-      "description" : "Generated branded multi-page PDF reports client-side with jsPDF/autotable, including dynamic image embedding, per-school course and scale breakdowns, and deployed as a static export under a configurable basePath. Advised international applicants on admissions, visa processes, and program selection across multiple regions. Automated updates to the visa issuance Excel sheet using Pandas and generated insights through charts. Reviewed academic transcripts and grading scales to assist accurate and timely international application decisions.",
-      "technologies": ["Python", "Excel"]
+      "description" : "Built a full-stack GPA conversion web app for Quinnipiac University’s International Admissions office to convert foreign transcripts into U.S. GPAs, store/search records, and export PDF reports. Developed the frontend with Next.js, React, TypeScript, and Tailwind CSS, including transcript workflows, reusable grading-scale management, dashboard visualizations, and client-side PDF generation. Built a serverless backend using Python, AWS Lambda, API Gateway, DynamoDB, and S3 to support transcript CRUD operations, grading-scale storage, and scalable data retrieval for admissions processing. Advised international applicants on admissions, visa processes, and program selection across multiple regions. Automated updates to the visa issuance Excel sheet using Pandas and generated insights through charts. Reviewed academic transcripts and grading scales to assist accurate and timely international application decisions.",
+      "technologies": ["TypeScript", "React", "Next.JS", "CSS", "AWS" ,"Python", "Excel"]
     }
   ],
   "projects": [
@@ -98,8 +107,8 @@
       "name": "GPA Calculator",
       "domain": "Web Development and AI",
       "image": "/gpa.jpg",
-      "description" : "Created a GPA Static GPA Calculator website to convert international transcripts to USA grade. The website allows you to enter the courses and scale you want to use to convert the scale. Then you can download the report which uses jsPDF. Designed and created to tackle the expensive websites available online.",
-      "technologies": ["React","TypeScript", "Claude Code"],
+      "description" : "Built a full-stack GPA conversion web app for Quinnipiac University’s International Admissions office to convert foreign transcripts into U.S. GPAs, store/search records, and export PDF reports.Developed the frontend with Next.js, React, TypeScript, and Tailwind CSS, including transcript workflows, reusable grading-scale management, dashboard visualizations, and client-side PDF generation. Built a serverless backend using Python, AWS Lambda, API Gateway, DynamoDB, and S3 to support transcript CRUD operations, grading-scale storage, and scalable data retrieval for admissions processing.",
+      "technologies": ["TypeScript", "React", "Next.JS", "CSS", "AWS" ,"Python", "Claude Code"],
       "github": "https://github.com/koushikvarmaJS/gpacalculator",
       "demo": ""
     }
