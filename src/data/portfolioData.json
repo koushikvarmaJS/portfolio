@@ -3,11 +3,11 @@
     "name": "Koushik Bhupathiraju",
     "title": "Software Developer & AI Engineer",
     "summary": "Passionate about building scalable web applications and intelligent systems.I specialize in creating seamless user experiences backed by robust architectures. Currently exploring the intersection of AI and web technologies to solve real-world problems.",
-    "image": "/gibli.png",
-    "resumeUrl": "/koushik_resume.pdf"
+    "image": "/IMG_1911.jpg",
+    "resumeUrl": "https://personal-bucket-kb.s3.us-east-1.amazonaws.com/koushik_resume.pdf"
   },
   "contact": {
-    "email": "kbhupathiraju@quinnipiac.edu.com",
+    "email": "motokaushik@gmail.com",
     "phone": "+1 (860) 328-9062",
     "github": "https://github.com/koushikvarmaJS",
     "linkedin": "https://www.linkedin.com/in/koushik-bhupathiraju-b26649188/",

@@ -88,12 +88,11 @@ const Projects = () => {
                         size="sm"
                         asChild
                         className="
-                        bg-white/80 text-black
+                        bg-card text-foreground
                         hover:bg-primary hover:text-primary-foreground
                         border-border
                         transition-colors
                         "
-                        // border-border hover:border-primary hover:text-primary
                       >
                         <a
                           href={project.github}

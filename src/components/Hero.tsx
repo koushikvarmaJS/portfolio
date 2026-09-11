@@ -93,6 +93,10 @@ const Hero = () => {
                 className="border-primary text-primary hover:bg-primary/10"
                 asChild
               >
+                {/* The S3 object sets `Content-Disposition: attachment`, so the
+                    browser downloads without leaving the page — no target needed.
+                    `download` is kept as a no-op safety net in case the file ever
+                    moves back to public/ and becomes same-origin. */}
                 <a href={getPublicPath(profile.resumeUrl)} download>
                   <Download className="mr-2 w-4 h-4" />
                   Resume

@@ -3,15 +3,50 @@ import { LuMail } from "react-icons/lu";
 import { FaMobile, FaLinkedin } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
 import portfolioData from "@/data/portfolioData.json";
+import ThemeToggle from "./ThemeToggle";
+import ContactLink, { type ContactItem } from "./ContactLink";
 
 const Header = () => {
   const { contact } = portfolioData;
 
-  const socialLinks = [
-    { icon: LuMail, href: `mailto:${contact.email}`, label: "Email" },
-    { icon: FaMobile, href: `tel:${contact.phone}`, label: "Phone" },
-    { icon: IoLogoGithub, href: contact.github, label: "GitHub" },
-    { icon: FaLinkedin, href: contact.linkedin, label: "LinkedIn" },
+  // Strips protocol/www/trailing slash so the tooltip shows "github.com/name"
+  // rather than the full URL, which overflows the tooltip.
+  const prettyUrl = (url: string) =>
+    url.replace(/^https?:\/\//, "").replace(/^www\./, "").replace(/\/$/, "");
+
+  const socialLinks: ContactItem[] = [
+    {
+      icon: LuMail,
+      label: "Email",
+      value: contact.email,
+      href: `mailto:${contact.email}`,
+      actionLabel: "Compose",
+      behavior: "copy",
+    },
+    {
+      icon: FaMobile,
+      label: "Phone",
+      value: contact.phone,
+      href: `tel:${contact.phone.replace(/[^\d+]/g, "")}`,
+      actionLabel: "Call",
+      behavior: "copy",
+    },
+    {
+      icon: IoLogoGithub,
+      label: "GitHub",
+      value: prettyUrl(contact.github),
+      href: contact.github,
+      actionLabel: "Open",
+      behavior: "link",
+    },
+    {
+      icon: FaLinkedin,
+      label: "LinkedIn",
+      value: prettyUrl(contact.linkedin),
+      href: contact.linkedin,
+      actionLabel: "Open",
+      behavior: "link",
+    },
   ];
 
   const navItems = [
@@ -60,22 +95,20 @@ const Header = () => {
           {/* Social Links */}
           <div className="flex items-center gap-4">
             {socialLinks.map((link, index) => (
-              <motion.a
+              <ContactLink
                 key={link.label}
-                href={link.href}
-                target={link.href.startsWith("http") ? "_blank" : undefined}
-                rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label={link.label}
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.3 + 0.1 * index }}
-                whileHover={{ scale: 1.2, rotate: 5 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <link.icon className="w-6 h-6" />
-              </motion.a>
+                item={link}
+                delay={0.3 + 0.1 * index}
+              />
             ))}
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.3 + 0.1 * socialLinks.length }}
+            >
+              <ThemeToggle />
+            </motion.div>
           </div>
         </div>
       </div>

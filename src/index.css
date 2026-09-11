@@ -4,12 +4,82 @@
 
 /* 
   Portfolio Design System
-  Theme: Dark slate with cyan accent
+  Themes: Light (soft teal/mint + deep teal) / Dark (slate + cyan accent)
   Style: Modern, minimal, professional
+
+  Light is defined on :root, dark on .dark — the class is applied to <html>
+  by next-themes (see src/components/ThemeProvider.tsx) and pre-applied by the
+  inline script in index.html to avoid a flash on first paint.
 */
 
 @layer base {
   :root {
+    /* Base colors - Light theme (soft teal / mint paper) */
+    --background: 180 35% 96%;
+    --foreground: 196 45% 11%;
+
+    /* Card surfaces with subtle elevation */
+    --card: 180 30% 99%;
+    --card-foreground: 196 45% 11%;
+
+    /* Popover/dropdown surfaces */
+    --popover: 180 30% 99%;
+    --popover-foreground: 196 45% 11%;
+
+    /* Primary accent - Deep teal (darkened for contrast on light surfaces) */
+    --primary: 175 82% 24%;
+    --primary-foreground: 180 30% 99%;
+
+    /* Secondary - Tinted mint */
+    --secondary: 180 32% 92%;
+    --secondary-foreground: 196 45% 11%;
+
+    /* Muted elements */
+    --muted: 180 32% 92%;
+    --muted-foreground: 196 18% 38%;
+
+    /* Accent - Same as primary for consistency */
+    --accent: 175 82% 24%;
+    --accent-foreground: 180 30% 99%;
+
+    /* Destructive states */
+    --destructive: 0 72% 45%;
+    --destructive-foreground: 180 30% 99%;
+
+    /* Borders and inputs */
+    --border: 184 25% 85%;
+    --input: 184 25% 85%;
+    --ring: 175 82% 24%;
+
+    --radius: 0.75rem;
+
+    /* Custom gradient variables */
+    --gradient-primary: linear-gradient(135deg, hsl(175 82% 24%) 0%, hsl(188 84% 26%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(180 30% 99%) 0%, hsl(180 32% 96%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(180 32% 97%) 0%, hsl(180 35% 94%) 100%);
+
+    /* Glass effect */
+    --glass-bg: hsl(180 30% 99% / 0.72);
+    --glass-border: hsl(184 25% 82% / 0.6);
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px hsl(196 45% 20% / 0.07);
+    --shadow-md: 0 4px 16px hsl(196 45% 20% / 0.10);
+    --shadow-lg: 0 8px 32px hsl(196 45% 20% / 0.13);
+    --shadow-glow: 0 0 40px hsl(175 82% 24% / 0.12);
+
+    /* Sidebar */
+    --sidebar-background: 180 32% 94%;
+    --sidebar-foreground: 196 45% 11%;
+    --sidebar-primary: 175 82% 24%;
+    --sidebar-primary-foreground: 180 30% 99%;
+    --sidebar-accent: 180 32% 90%;
+    --sidebar-accent-foreground: 196 45% 11%;
+    --sidebar-border: 184 25% 85%;
+    --sidebar-ring: 175 82% 24%;
+  }
+
+  .dark {
     /* Base colors - Dark theme */
     --background: 222 47% 6%;
     --foreground: 210 40% 98%;
@@ -47,13 +117,11 @@
     --input: 217 33% 20%;
     --ring: 174 72% 56%;
 
-    --radius: 0.75rem;
-
     /* Custom gradient variables */
     --gradient-primary: linear-gradient(135deg, hsl(174 72% 56%) 0%, hsl(186 76% 50%) 100%);
     --gradient-card: linear-gradient(145deg, hsl(222 47% 10%) 0%, hsl(222 47% 7%) 100%);
     --gradient-hero: linear-gradient(180deg, hsl(222 47% 8%) 0%, hsl(222 47% 5%) 100%);
-    
+
     /* Glass effect */
     --glass-bg: hsl(222 47% 10% / 0.7);
     --glass-border: hsl(217 33% 25% / 0.5);
@@ -88,6 +156,18 @@
   body {
     @apply bg-background text-foreground antialiased;
     font-feature-settings: "rlig" 1, "calt" 1;
+    transition: background-color 300ms ease, color 300ms ease;
+  }
+
+  /* Respect users who ask for reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    body {
+      transition: none;
+    }
   }
 
   /* Custom scrollbar */
